@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>UpDatE LisT</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post" class="shadow-lg p-3 mb-5 bg-white rounded">
+              {% csrf_token %}
+               {{form.as_p}}
+                <div>
+                    <input type="submit" class="btn btn-success">
+                </div>
+                </form>
+
+    </div>
+
+</div>
+</div>
+{% endblock %}
